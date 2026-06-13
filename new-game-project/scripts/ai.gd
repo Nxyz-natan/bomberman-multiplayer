@@ -125,3 +125,4 @@ func die():
 	anim.play("idle_down")
 	is_moving = false
 	set_physics_process(true)
+	

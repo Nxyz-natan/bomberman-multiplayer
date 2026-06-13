@@ -82,5 +82,3 @@ texture_filter = 1
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_dvsvq")
 animation = &"Explosion"
-frame = 8
-frame_progress = 1.0

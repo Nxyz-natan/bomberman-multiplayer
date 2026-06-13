@@ -20,3 +20,4 @@ func check_for_player():
 
 func _on_animation_finished():
 	queue_free()
+	

@@ -6,7 +6,7 @@ const TILE_SIZE = 80
 var is_moving = false
 var last_direction = Vector2.DOWN
 var bomb_cooldown = 0.0
-var bomb_interval = 3.0
+var bomb_interval = 1.5
 
 func _ready():
 	add_to_group("player")
@@ -17,26 +17,26 @@ func _physics_process(delta):
 	
 	bomb_cooldown -= delta
 	
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("bomb"):
 		if bomb_cooldown <= 0:
 			place_bomb()
 			bomb_cooldown = bomb_interval
 	
 	var input_direction = Vector2.ZERO
 	
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("right"):
 		input_direction = Vector2.RIGHT
 		last_direction = Vector2.RIGHT
 		anim.play("walk_right")
-	elif Input.is_action_pressed("ui_left"):
+	elif Input.is_action_pressed("left"):
 		input_direction = Vector2.LEFT
 		last_direction = Vector2.LEFT
 		anim.play("walk_left")
-	elif Input.is_action_pressed("ui_down"):
+	elif Input.is_action_pressed("down"):
 		input_direction = Vector2.DOWN
 		last_direction = Vector2.DOWN
 		anim.play("walk_down")
-	elif Input.is_action_pressed("ui_up"):
+	elif Input.is_action_pressed("up"):
 		input_direction = Vector2.UP
 		last_direction = Vector2.UP
 		anim.play("walk_up")
