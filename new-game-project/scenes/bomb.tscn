@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bvqn6a1pbl4gk"]
+
+[ext_resource type="Texture2D" uid="uid://dkglmuf0myu2a" path="res://Ninja Adventure - Asset Pack-2/Items/Projectile/Bomb.png" id="1_4kkau"]
+[ext_resource type="Script" uid="uid://dcx1q6ce78kqs" path="res://scripts/bomb.gd" id="1_vpdcx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j15uc"]
+radius = 29.068884
+
+[node name="Bomb" type="Area2D" unique_id=1462397152]
+scale = Vector2(5, 5)
+script = ExtResource("1_vpdcx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=799157148]
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_4kkau")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1785102039]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_j15uc")
