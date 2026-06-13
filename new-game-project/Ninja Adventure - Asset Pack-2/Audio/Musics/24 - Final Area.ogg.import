@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6mwpihf4n0sr"
+path="res://.godot/imported/24 - Final Area.ogg-7d9abf0ebb3ac99dc65b7a43dd545ae5.oggvorbisstr"
+
+[deps]
+
+source_file="res://Ninja Adventure - Asset Pack-2/Audio/Musics/24 - Final Area.ogg"
+dest_files=["res://.godot/imported/24 - Final Area.ogg-7d9abf0ebb3ac99dc65b7a43dd545ae5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
